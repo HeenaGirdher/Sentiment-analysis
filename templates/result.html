@@ -10,11 +10,11 @@
 	
 		
                  {% if prediction=='Positive' %}
-	  <image src="{{url_for('static',filename = 'positive.png')}}"/>
+	  <image src="{{url_for('static',filename = 'positive.PNG')}}"/>
 		 {% elif prediction=='Negative' %}
-	<image src="{{url_for('static',filename = 'negative.png')}}"/>
+	<image src="{{url_for('static',filename = 'negative.PNG')}}"/>
 		{% else %}
-	<image src="{{url_for('static',filename = 'neutral.png')}}"/>
+	<image src="{{url_for('static',filename = 'neutral.PNG')}}"/>
 		{%endif%}
 
 </body>
