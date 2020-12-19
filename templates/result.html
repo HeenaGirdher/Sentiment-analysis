@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sentiment Analysis</title>
+</head>
+<style>
+ img{height:200px;}
+</style>
+<body>
+	
+		
+                 {% if prediction=='Positive' %}
+	  <image src="{{url_for('static',filename = 'positive.png')}}"/>
+		 {% elif prediction=='Negative' %}
+	<image src="{{url_for('static',filename = 'negative.png')}}"/>
+		{% else %}
+	<image src="{{url_for('static',filename = 'neutral.png')}}"/>
+		{%endif%}
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	
+</head>
+<style>
+ .ml-container{
+   width:600px;background:skyblue;padding:10px;
+  }
+.containerContent{
+  text-align:center;
+}
+.btn-info{
+  width:100px;
+  height:40px;
+background:skyblue;
+border-radius:10px;
+border:1px solid #000; 
+margin-top:10px;
+}
+
+.backImg{
+height:40px;
+background:skyblue;
+border-radius:10px;
+border:1px solid #000; 
+margin-top:10px;
+}
+
+textarea{
+  width:350px;
+  height:150px;
+}
+
+p{
+ font-weight:bold;
+ font-size:16px;}
+</style>
+<body>
+
+	
+
+	<div class="ml-container">
+                <a href="/home"><image value="img" src="{{url_for('static',filename = 'back.png')}}"class="backImg" value="Next"/></a> 
+		<form action="{{ url_for('predict')}}" method="POST">
+		<div class="containerContent">
+                <p>Please enter your Product Review</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="message" rows="6" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="Predict">
+		</div>
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>
